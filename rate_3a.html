@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="body_area rate_page">
+    <div class="banner">
+      <img src="assets/img/banner.png" alt="" />
+    </div>
+    <div class="container">
+      <div class="user_img">
+        <img src="assets/img/user.png" alt="" />
+        <h2>Charlie Harvey</h2>
+      </div>
+      <div class="add-bonus">
+        <p>Tip Charlie?</p>
+        <a href="#">Add bonus</a>
+      </div>
+      <div>
+        <h1 class="bg_amount">£50</h1>
+      </div>
+      <div class="counter">
+        <div class="decrement"><i class="fas fa-minus"></i></div>
+        <span class="count" id="countElement">50</span>
+        <div class="increment"><i class="fas fa-plus"></i></div>
+      </div>
+      <a href="rate_4a.html" class="btn">Confirm Rate Now</a>
+    </div>
+    <div class="footer">
+      <a href="register.html"><i class="fa-solid fa-person icons"></i></a>
+      <a href="gallery_105.html"><i class="fa-solid fa-flag icons"></i></a>
+      <a href="rate.html" class="active"><i class="fa-solid fa-sterling-sign icons"></i></a>
+      <a href="contact_3.html"><i class="fa-solid fa-piggy-bank icons"></i></a>
+    </div>
+  </div>
+  <!-- ============================== -->
+  <script src="assets/js/jquery-3.6.4.min.js"></script>
+  <script src="assets/js/all.min.js"></script>
+  <script src="assets/js/fontawesome.min.js"></script>
+  <script src="assets/js/style.js"></script>
+
+  <script>
+    const decrementButton = document.querySelector(".decrement");
+    const incrementButton = document.querySelector(".increment");
+    const countElement = document.getElementById("countElement");
+
+    let count = 50;
+
+    decrementButton.addEventListener("click", () => {
+      if (count > 0) {
+        count -= 5; // Decrease count by 5
+        updateCount();
+      }
+    });
+
+    incrementButton.addEventListener("click", () => {
+      count += 5; // Increase count by 5
+      updateCount();
+    });
+
+    function updateCount() {
+      countElement.textContent = count;
+    }
+  </script>
+</body>
+
+</html>

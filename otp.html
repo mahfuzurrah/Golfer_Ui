@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="body_area otp_page screen">
+    <div class="top_nav">
+      <a href="register.html" class="top_back_icon">
+        <i class="fa-solid fa-arrow-left icons"></i>
+      </a>
+    </div>
+    <div class="container">
+      <div class="wrapper">
+        <div class="wrapper_item">
+          <div class="item">
+            <div class="text_center mt-3">
+              <h2>Enter OTP</h2>
+              <p>Enter your phone number to register</p>
+            </div>
+            <div style="width: 100%;">
+              <div class="otp_area mt-5">
+                <input type="text" maxlength="1" onkeyup="handleInput(this, input2)"
+                  onkeydown="handleBackspace(this, input1)" />
+                <input type="text" id="input2" maxlength="1" onkeyup="handleInput(this, input3)"
+                  onkeydown="handleBackspace(this, input1)" />
+                <input type="text" id="input3" maxlength="1" onkeyup="handleInput(this, input4)"
+                  onkeydown="handleBackspace(this, input2)" />
+                <input type="text" id="input4" maxlength="1" onkeyup="handleInput(this, input5)"
+                  onkeydown="handleBackspace(this, input3)" />
+                <input type="text" id="input5" maxlength="1" onkeydown="handleBackspace(this, input4)" />
+              </div>
+            </div>
+          </div>
+          <a href="PIN.html" class="btn mt-3"> Verify Now </a>
+        </div>
+        </div>
+    </div>
+  </div>
+  <!-- ============================== -->
+  <script src="assets/js/jquery-3.6.4.min.js"></script>
+  <script src="assets/js/all.min.js"></script>
+  <script src="assets/js/fontawesome.min.js"></script>
+  <script src="assets/js/style.js"></script>
+</body>
+
+</html>

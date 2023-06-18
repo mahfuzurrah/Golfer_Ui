@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>International Telephone Input</title>
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="assets/css/intlTelInput.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <div class="body_area screen">
+    <div class="top_nav">
+      <a href="index.html" class="top_back_icon">
+          <i class="fa-solid fa-arrow-left icons"></i>
+      </a>
+    </div>
+    <div class="container">
+      <div class="wrapper">
+        <div class="wrapper_item">
+          <div class="item">
+            <div class="text_center mt-3">
+              <h2>Register</h2>
+              <p>Please register to continue with the app</p>
+            </div>
+            <form class="input_area mt-5">
+              <label for="">Phone Number</label>
+              <input class="input_field" id="phone" name="phone" type="tel" />
+            </form>
+          </div>
+          <div class="item">
+            <a href="otp.html" class="btn mt-3">
+              Register
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- ============================== -->
+  <script src="assets/js/jquery-3.6.4.min.js"></script>
+  <script src="assets/js/all.min.js"></script>
+  <script src="assets/js/fontawesome.min.js"></script>
+  <script src="assets/js/intlTelInput.js"></script>
+  <script src="assets/js/style.js"></script>
+  <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      // allowDropdown: false,
+      // autoInsertDialCode: true,
+      // autoPlaceholder: "off",
+      // dropdownContainer: document.body,
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      // geoIpLookup: function(callback) {
+      //   fetch("https://ipapi.co/json")
+      //     .then(function(res) { return res.json(); })
+      //     .then(function(data) { callback(data.country_code); })
+      //     .catch(function() { callback("us"); });
+      // },
+      // hiddenInput: "full_number",
+      // initialCountry: "auto",
+      // localizedCountries: { 'de': 'Deutschland' },
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      // separateDialCode: true,
+      // showFlags: false,
+      utilsScript: "assets/js/utils.js"
+    });
+  </script>
+</body>
+
+</html>
