@@ -1,66 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
 
-  <body>
-    <div class="body_area payment_mode">
-      <div class="top_nav">
-        <a href="PIN.html" class="top_back_icon">
-          <i class="fa-solid fa-arrow-left icons"></i>
-        </a>
-        <h2>My Profile</h2>
-      </div>
-      <div class="container">
-        <div class="user_img mt-4">
-          <img src="assets/img/user.png" alt="" />
-          <h2>Charlie Harvey</h2>
-        </div>
-        <div class="mode_list">
-          <div class="list">
-            <div class="payer">
-              <i class="fa-brands fa-apple icons"></i>
-              <h2>Apple Pay</h2>
-            </div>
-            <i class="fa-solid fa-circle-check icons"></i>
-          </div>
-          <div class="list">
-            <div class="payer">
-              <i class="fa-solid fa-credit-card icons"></i>
-              <h2>Credit Card</h2>
-            </div>
-            <i class="fa-solid fa-circle-check icons"></i>
-          </div>
-          <div class="list">
-            <div class="payer">
-              <i class="fa-brands fa-paypal icons"></i>
-              <h2>PayPal</h2>
-            </div>
-            <i class="fa-solid fa-circle-check icons"></i>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
 
-        <a href="payment_mode_details.html" class="btn">Pay Now</a>
-      </div>
-      <div class="footer">
-        <a href="register.html"><i class="fa-solid fa-person icons"></i></a>
-        <a href="gallery_105.html"><i class="fa-solid fa-flag icons"></i></a>
-        <a href="rate.html" class="active"
-          ><i class="fa-solid fa-sterling-sign icons"></i
-        ></a>
-        <a href="contact_3.html"><i class="fa-solid fa-piggy-bank icons"></i></a>
-      </div>
+<body>
+  <div class="body_area payment_mode">
+    <div class="top_nav">
+      <a href="PIN.html" class="top_back_icon">
+        <i class="fa-solid fa-arrow-left icons"></i>
+      </a>
+      <h2>My Profile</h2>
     </div>
-    <!-- ============================== -->
-    <script src="assets/js/jquery-3.6.4.min.js"></script>
-    <script src="assets/js/all.min.js"></script>
-    <script src="assets/js/fontawesome.min.js"></script>
-    <script src="assets/js/style.js"></script>
-  </body>
+    <div class="container">
+      <div class="user_img mt-4">
+        <img src="assets/img/user.png" alt="" />
+        <h2>Charlie Harvey</h2>
+      </div>
+      <div class="mode_list">
+        <div class="list">
+          <div class="payer">
+            <i class="fa-brands fa-apple icons"></i>
+            <h2>Apple Pay</h2>
+          </div>
+          <i class="fa-solid fa-circle-check icons"></i>
+        </div>
+        <div class="list">
+          <div class="payer">
+            <i class="fa-solid fa-credit-card icons"></i>
+            <h2>Credit Card</h2>
+          </div>
+          <i class="fa-solid fa-circle-check icons"></i>
+        </div>
+        <div class="list">
+          <div class="payer">
+            <i class="fa-brands fa-paypal icons"></i>
+            <h2>PayPal</h2>
+          </div>
+          <i class="fa-solid fa-circle-check icons"></i>
+        </div>
+      </div>
+
+      <a href="payment_mode_details.html" class="btn">Pay Now</a>
+    </div>
+    <div class="footer">
+      <a href="register.html"><i class="fa-solid fa-person icons"></i></a>
+      <a href="gallery_105.html"><i class="fa-solid fa-flag icons"></i></a>
+      <a href="rate.html" class="active"><i class="fa-solid fa-sterling-sign icons"></i></a>
+      <a href="current_settings.html"><i class="fa-solid fa-piggy-bank icons"></i></a>
+    </div>
+  </div>
+  <!-- ============================== -->
+  <script src="assets/js/jquery-3.6.4.min.js"></script>
+  <script src="assets/js/all.min.js"></script>
+  <script src="assets/js/fontawesome.min.js"></script>
+  <script src="assets/js/style.js"></script>
+  <script>
+    const listItems = document.querySelectorAll(".list");
+
+    listItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        if (item.classList.contains("active")) {
+          item.classList.remove("active");
+          item.querySelector(".fa-circle-check").style.color = "#000";
+        } else {
+          listItems.forEach((otherItem) => {
+            otherItem.classList.remove("active");
+            otherItem.querySelector(".fa-circle-check").style.color = "#000";
+          });
+
+          item.classList.add("active");
+          item.querySelector(".fa-circle-check").style.color = "red";
+        }
+      });
+    });
+  </script>
+</body>
+
 </html>

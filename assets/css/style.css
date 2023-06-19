@@ -288,6 +288,10 @@ input {
     text-align: center;
 }
 
+ul#iti-0__country-listbox {
+    width: 250px;
+}
+
 /* ======================= */
 
 /* ======================= */
@@ -617,14 +621,15 @@ Rate Page
 
 .charlie_list,
 .mode_list {
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 20px;
     background: var(--bg2-color);
     border-radius: 8px;
 }
 
 .charlie_list .list,
-.mode_list .list {
+.mode_list .list,
+.mode_list .tip {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -637,13 +642,16 @@ Rate Page
     padding: 0
 }
 
-.mode_list .list {
+.mode_list .list,
+.mode_list .tip {
     background: var(--bg2-color);
     margin-top: 20px;
     padding: 12px 20px;
     cursor: pointer;
+    border-radius: 8px;
 }
 
+.mode_list .tip .payer,
 .mode_list .list .payer {
     display: flex;
     align-items: center;
@@ -803,3 +811,27 @@ pre {
     width: 250px;
   }
 /* ==================== */
+
+.tip_s{
+    padding: 10px 12px;
+    background: var(--white-color);
+    border: 1px solid var(--bg-color);
+    width: 120px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.shots_input{
+    padding: 25px 20px;
+    border: none;
+    background: var(--bg2-color);
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.add_icons{
+    position: absolute;
+    top: 0;
+    right: 50px;
+}

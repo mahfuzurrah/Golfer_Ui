@@ -26,27 +26,6 @@ prices.forEach((price) => {
 });
 
 
-// Payment Mode
-const listItems = document.querySelectorAll(".list");
-
-listItems.forEach((item) => {
-  item.addEventListener("click", () => {
-    if (item.classList.contains("active")) {
-      item.classList.remove("active");
-      item.querySelector(".fa-circle-check").style.color = "#000";
-    } else {
-      listItems.forEach((otherItem) => {
-        otherItem.classList.remove("active");
-        otherItem.querySelector(".fa-circle-check").style.color = "#000";
-      });
-
-      item.classList.add("active");
-      item.querySelector(".fa-circle-check").style.color = "red";
-    }
-  });
-});
-
-
 // PIN & OTP
 
 function handleInput(currentInput, nextInput) {

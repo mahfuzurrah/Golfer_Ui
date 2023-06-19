@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="body_area rate_page">
+      <div class="banner">
+        <img src="assets/img/banner.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="user_img">
+          <img src="assets/img/user.png" alt="" />
+          <h2>Charlie Harvey</h2>
+        </div>
+        <div class="add-bonus">
+          <p>Match Stakes</p>
+          <a href="contact_3.html">edit</a>
+        </div>
+        <div>
+          <div class="mode_list">
+            <div class="tip" id="tip">
+              <div class="payer">
+                <i class="fa-solid fa-circle-check icons"></i>
+                <p style="font-size: 16px">Win Match</p>
+              </div>
+              <span class="tip_s">£15</span>
+            </div>
+            <div class="tip" id="tip">
+              <div class="payer">
+                <i class="fa-solid fa-circle-check icons"></i>
+                <p style="font-size: 16px">Birdies</p>
+              </div>
+              <span class="tip_s">£1</span>
+            </div>
+            <div class="tip" id="tip">
+              <div class="payer">
+                <i class="fa-solid fa-circle-check icons"></i>
+                <p style="font-size: 16px">Eagles</p>
+              </div>
+              <span class="tip_s">£50</span>
+            </div>
+          </div>
+        </div>
+        <a href="rate_5a.html" class="btn">Accept</a>
+      </div>
+      <div class="footer">
+        <a href="register.html" class="active"><i class="fa-solid fa-person icons"></i></a>
+        <a href="gallery_105.html"><i class="fa-solid fa-flag icons"></i></a>
+        <a href="rate.html"><i class="fa-solid fa-sterling-sign icons"></i></a>
+        <a href="contact_3.html"
+          ><i class="fa-solid fa-share icons"></i></i
+        ></a>
+      </div>
+    </div>
+    <!-- ============================== -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+    <script src="assets/js/style.js"></script>
+    <script>
+      const cards = document.querySelectorAll("#tip");
+
+      cards.forEach((card) => {
+        card.addEventListener("click", () => {
+          card.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

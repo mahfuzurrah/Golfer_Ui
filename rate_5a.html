@@ -11,6 +11,11 @@
 
   <body>
     <div class="body_area rate_page">
+      <div class="top_nav">
+        <a href="rate_4a.html" class="top_back_icon">
+          <i class="fa-solid fa-arrow-left icons"></i>
+        </a>
+      </div>
       <div class="container">
         <div class="brand_info">
           <img src="assets/img/logo/RSG LOGO 1.png" alt="" />
@@ -39,6 +44,18 @@
             <p>£63</p>
           </div>
         </div>
+        <div class="mode_list" style="margin-top: 10px !important">
+          <div class="tip" id="tip">
+            <div class="payer">
+              <i class="fa-brands fa-apple icons"></i>
+              <p>
+                Round Tip Up
+                <span><i class="fa-solid fa-circle-info"></i></span>
+              </p>
+            </div>
+            <i class="fa-solid fa-circle-check icons"></i>
+          </div>
+        </div>
         <a href="payment_mode.html" class="btn">Settle Up With Charlie Now ?</a>
       </div>
       <div class="footer">
@@ -57,5 +74,12 @@
     <script src="assets/js/all.min.js"></script>
     <script src="assets/js/fontawesome.min.js"></script>
     <script src="assets/js/style.js"></script>
+    <script>
+      const toggleButton = document.getElementById("tip");
+
+      toggleButton.addEventListener("click", () => {
+        toggleButton.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
