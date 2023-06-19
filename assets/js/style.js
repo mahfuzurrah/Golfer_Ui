@@ -55,17 +55,6 @@ function handleBackspace(currentInput, previousInput) {
 }
 
 
-// Add Bank Details
-
-document.querySelector('input').addEventListener('focus', function () {
-  this.setAttribute('placeholder', '');
-});
-
-document.querySelector('input').addEventListener('blur', function () {
-  this.setAttribute('placeholder');
-});
-
-
 // Image Upload
 
 document.getElementById('imageUpload').addEventListener('change', handleImageUpload);
