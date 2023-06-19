@@ -327,6 +327,7 @@ ul#iti-0__country-listbox {
     border-radius: 16px;
     width: 180px;
     height: 160px;
+    cursor: pointer;
 }
 
 .caddy_golfer .icons {
@@ -834,4 +835,12 @@ pre {
     position: absolute;
     top: 0;
     right: 50px;
+}
+
+.bg_img {
+    margin-bottom: 20px;
+}
+
+.bg_img img{
+    width: 100%;
 }
