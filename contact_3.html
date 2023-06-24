@@ -1,82 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="assets/css/all.min.css" />
-  <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-
-<body>
-  <div class="body_area payment_mode">
-    <div class="top_nav">
-      <a href="PIN.html" class="top_back_icon">
-        <i class="fa-solid fa-arrow-left icons"></i>
-      </a>
-      <h2>Contacts (3)</h2>
-    </div>
-    <div class="container">
-      <div class="mode_list">
-        <div class="list">
-          <div class="user_name">
-            <p>John Duncan</p>
-            <p>Prestwick GC</p>
-            <p>10</p>
-          </div>
-          <div style="display: flex; align-items: center; gap: 20px">
-            <img class="user_img" src="assets/img/user.png" alt="" />
-            <i class="fa-solid fa-circle-check icons"></i>
-          </div>
-        </div>
-        <div class="list">
-          <div class="user_name">
-            <p>John Duncan</p>
-            <p>Prestwick GC</p>
-            <p>10</p>
-          </div>
-          <div style="display: flex; align-items: center; gap: 20px">
-            <img class="user_img" src="assets/img/user.png" alt="" />
-            <i class="fa-solid fa-circle-check icons"></i>
-          </div>
-        </div>
-        <div class="list">
-          <div class="user_name">
-            <p>John Duncan</p>
-            <p>Prestwick GC</p>
-            <p>10</p>
-          </div>
-          <div style="display: flex; align-items: center; gap: 20px">
-            <img class="user_img" src="assets/img/user.png" alt="" />
-            <i class="fa-solid fa-circle-check icons"></i>
-          </div>
-        </div>
+  <body>
+    <div class="body_area payment_mode">
+      <div class="top_nav">
+        <a href="contact_3.html" class="top_back_icon">
+          <i class="fa-solid fa-arrow-left icons"></i>
+        </a>
+        <h2>Contacts (3)</h2>
       </div>
-      <a href="our_match.html" class="btn">Invite</a>
+      <div class="container">
+        <div class="mode_list">
+          <div class="list">
+            <div class="user_name">
+              <p>John Duncan</p>
+              <p>Prestwick GC</p>
+              <p>10</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 20px">
+              <img class="user_img" src="assets/img/user.png" alt="" />
+              <i class="fa-solid fa-circle-check icons"></i>
+            </div>
+          </div>
+          <div class="list">
+            <div class="user_name">
+              <p>John Duncan</p>
+              <p>Prestwick GC</p>
+              <p>10</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 20px">
+              <img class="user_img" src="assets/img/user.png" alt="" />
+              <i class="fa-solid fa-circle-check icons"></i>
+            </div>
+          </div>
+          <div class="list">
+            <div class="user_name">
+              <p>John Duncan</p>
+              <p>Prestwick GC</p>
+              <p>10</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 20px">
+              <img class="user_img" src="assets/img/user.png" alt="" />
+              <i class="fa-solid fa-circle-check icons"></i>
+            </div>
+          </div>
+        </div>
+        <a href="our_match.html" class="btn">Invite</a>
+      </div>
+      <div class="footer">
+        <a href="register.html" class="active"
+          ><i class="fa-solid fa-person icons"></i
+        ></a>
+        <a href="gallery_105.html"><i class="fa-solid fa-flag icons"></i></a>
+        <a href="rate.html"><i class="fa-solid fa-sterling-sign icons"></i></a>
+        <a href="manage_match_stakes.html"
+          ><i class="fa-solid fa-piggy-bank icons"></i
+        ></a>
+      </div>
     </div>
-    <div class="footer">
-      <a href="register.html" class="active"><i class="fa-solid fa-person icons"></i></a>
-      <a href="gallery_105.html"><i class="fa-solid fa-flag icons"></i></a>
-      <a href="rate.html"><i class="fa-solid fa-sterling-sign icons"></i></a>
-      <a href="contact_3.html"><i class="fa-solid fa-piggy-bank icons"></i></a>
-    </div>
-  </div>
-  <!-- ============================== -->
-  <script src="assets/js/jquery-3.6.4.min.js"></script>
-  <script src="assets/js/all.min.js"></script>
-  <script src="assets/js/fontawesome.min.js"></script>
-  <script src="assets/js/style.js"></script>
-  <script>
-    const cards = document.querySelectorAll(".list");
+    <!-- ============================== -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+    <script src="assets/js/style.js"></script>
+    <script>
+      const cards = document.querySelectorAll(".list");
 
-    cards.forEach(card => {
-      card.addEventListener("click", () => {
-        card.classList.toggle("active");
+      cards.forEach((card) => {
+        card.addEventListener("click", () => {
+          card.classList.toggle("active");
+        });
       });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>

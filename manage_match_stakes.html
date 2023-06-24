@@ -10,94 +10,72 @@
   </head>
 
   <body>
-    <div class="body_area rate_page">
+    <div class="body_area">
       <div class="top_nav">
         <a href="settings.html" class="top_back_icon">
           <i class="fa-solid fa-arrow-left icons"></i>
         </a>
-        <h2>Manage Settings</h2>
+        <h2>Manage Match Stakes</h2>
       </div>
       <div class="container">
-        <div class="m_incentives">
-          <div class="mode_list">
-            <div class="tip" id="tip">
-              <div class="payer">
-                <i class="fa-solid fa-arrow-up-from-bracket icons"></i>
-                <p>
-                  Round Tip Up
-                  <span><i class="fa-solid fa-circle-info"></i></span>
-                </p>
-              </div>
-              <i class="fa-solid fa-circle-check icons"></i>
-            </div>
-            <div class="tip" id="tip">
-              <div class="payer">
-                <img src="assets/img/Icons/card.svg" alt="" />
-                <p>
-                  Tipping Unit
-                  <span><i class="fa-solid fa-circle-info"></i></span>
-                </p>
-              </div>
-              <i class="fa-solid fa-circle-check icons"></i>
-            </div>
-          </div>
-          <div class="add-bonus">
-            <h2>Manage Incentives</h2>
-            <a href="#"><i class="fa-solid fa-circle-plus icons"></i></a>
-          </div>
+        <div class="user_img mt-4" style="position: relative">
+          <img src="assets/img/user.png" alt="" />
+          <h2>Charlie Harvey</h2>
+          <p>Add bio</p>
+          <a href="#" class="add_icons"
+            ><img src="assets/img/Icons/add-circle.svg" alt=""
+          /></a>
         </div>
-        <div class="mode_list" style="margin-top: 100px">
-          <div class="tip" id="tip">
+        <div class="mode_list" style="margin-top: 50px">
+          <div class="list">
             <div class="payer">
               <img src="assets/img/calendar-2.svg" alt="" />
-              <p style="font-size: 16px">Birdies</p>
+              <p>Birdies</p>
             </div>
             <div class="payer">
-              <p style="font-size: 16px">£1</p>
+              <p>£1</p>
               <i class="fa-solid fa-circle-check icons"></i>
             </div>
           </div>
-          <div class="tip" id="tip">
+          <div class="list">
             <div class="payer">
               <img src="assets/img/calendar-2.svg" alt="" />
-              <p style="font-size: 16px">Eagles</p>
+              <p>Eagles</p>
             </div>
             <div class="payer">
-              <p style="font-size: 16px">£50</p>
+              <p>£50</p>
               <i class="fa-solid fa-circle-check icons"></i>
             </div>
           </div>
-          <div class="tip" id="tip">
+          <div class="list">
             <div class="payer">
               <img src="assets/img/calendar-2.svg" alt="" />
-              <p style="font-size: 16px">Win Match</p>
+              <p>Win Match</p>
             </div>
             <div class="payer">
-              <p style="font-size: 16px">£15</p>
+              <p>£15</p>
               <i class="fa-solid fa-circle-check icons"></i>
             </div>
           </div>
-          <div class="tip" id="tip">
+          <div class="list">
             <div class="payer">
               <img src="assets/img/calendar-2.svg" alt="" />
-              <p style="font-size: 16px">Hole in One</p>
+              <p>Hole in One</p>
             </div>
             <div class="payer">
-              <p style="font-size: 16px">£1,000</p>
+              <p>£1000</p>
               <i class="fa-solid fa-circle-check icons"></i>
             </div>
           </div>
+          <input type="text" placeholder="Shots" class="shots_input" />
         </div>
-
-        <a href="payment_mode.html" class="btn">Confirm</a>
+        <a href="contact_3_0.2.html" class="btn">Confirm</a>
       </div>
       <div class="footer">
-        <a href="register.html" class="active"
-          ><i class="fa-solid fa-person icons"></i
-        ></a>
+        <a href="register.html"><i class="fa-solid fa-person icons"></i></a>
         <a href="gallery_105.html"><i class="fa-solid fa-flag icons"></i></a>
         <a href="rate.html"><i class="fa-solid fa-sterling-sign icons"></i></a>
-        <a href="manage_match_stakes.html"
+        <a href="manage_match_stakes.html" class="active"
           ><i class="fa-solid fa-piggy-bank icons"></i
         ></a>
       </div>
@@ -108,7 +86,7 @@
     <script src="assets/js/fontawesome.min.js"></script>
     <script src="assets/js/style.js"></script>
     <script>
-      const cards = document.querySelectorAll("#tip");
+      const cards = document.querySelectorAll(".list");
 
       cards.forEach((card) => {
         card.addEventListener("click", () => {

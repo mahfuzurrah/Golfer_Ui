@@ -861,3 +861,24 @@ pre {
     right: 0;
     cursor: pointer;
 }
+
+.partner{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.list_user{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px;
+
+}
+
+.list_user img{
+    width: 60px;
+    border-radius: 100px;
+    border: 1px solid var(--primary-color);
+}

@@ -1,95 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="assets/css/all.min.css" />
-  <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-
-<body>
-  <div class="body_area payment_mode">
-    <div class="top_nav">
-      <a href="contact_3.html" class="top_back_icon">
-        <i class="fa-solid fa-arrow-left icons"></i>
-      </a>
-      <h2>Our Match</h2>
-    </div>
-    <div class="container">
-      <div class="user_img mt-4" style="position: relative;">
-        <img src="assets/img/user.png" alt="" />
-        <h2>Charlie Harvey</h2>
-        <p>Add bio</p>
-        <a href="#" class="add_icons"><img src="assets/img/Icons/add-circle.svg" alt=""></a>
+  <body>
+    <div class="body_area payment_mode">
+      <div class="top_nav">
+        <a href="contact_3.html" class="top_back_icon">
+          <i class="fa-solid fa-arrow-left icons"></i>
+        </a>
+        <h2>Our Match</h2>
       </div>
-      <div class="mode_list" style="margin-top: 50px">
-        <div class="list">
-          <div class="payer">
-            <img src="assets/img/calendar-2.svg" alt="" />
-            <p>Birdies</p>
-          </div>
-          <div class="payer">
-            <p>£1</p>
-            <i class="fa-solid fa-circle-check icons"></i>
-          </div>
+      <div class="container">
+        <div class="user_img mt-4" style="position: relative">
+          <img src="assets/img/user.png" alt="" />
+          <h2>Charlie Harvey</h2>
+          <p>Add bio</p>
+          <a href="#" class="add_icons"
+            ><img src="assets/img/Icons/add-circle.svg" alt=""
+          /></a>
         </div>
-        <div class="list">
-          <div class="payer">
-            <img src="assets/img/calendar-2.svg" alt="" />
-            <p>Eagles</p>
+        <div class="mode_list" style="margin-top: 50px">
+          <div class="list">
+            <div class="payer">
+              <img src="assets/img/calendar-2.svg" alt="" />
+              <p>Birdies</p>
+            </div>
+            <div class="payer">
+              <p>£1</p>
+              <i class="fa-solid fa-circle-check icons"></i>
+            </div>
           </div>
-          <div class="payer">
-            <p>£50</p>
-            <i class="fa-solid fa-circle-check icons"></i>
+          <div class="list">
+            <div class="payer">
+              <img src="assets/img/calendar-2.svg" alt="" />
+              <p>Eagles</p>
+            </div>
+            <div class="payer">
+              <p>£50</p>
+              <i class="fa-solid fa-circle-check icons"></i>
+            </div>
           </div>
+          <div class="list">
+            <div class="payer">
+              <img src="assets/img/calendar-2.svg" alt="" />
+              <p>Win Match</p>
+            </div>
+            <div class="payer">
+              <p>£15</p>
+              <i class="fa-solid fa-circle-check icons"></i>
+            </div>
+          </div>
+          <div class="list">
+            <div class="payer">
+              <img src="assets/img/calendar-2.svg" alt="" />
+              <p>Hole in One</p>
+            </div>
+            <div class="payer">
+              <p>£1000</p>
+              <i class="fa-solid fa-circle-check icons"></i>
+            </div>
+          </div>
+          <input type="text" placeholder="Shots" class="shots_input" />
         </div>
-        <div class="list">
-          <div class="payer">
-            <img src="assets/img/calendar-2.svg" alt="" />
-            <p>Win Match</p>
-          </div>
-          <div class="payer">
-            <p>£15</p>
-            <i class="fa-solid fa-circle-check icons"></i>
-          </div>
-        </div>
-        <div class="list">
-          <div class="payer">
-            <img src="assets/img/calendar-2.svg" alt="" />
-            <p>Hole in One</p>
-          </div>
-          <div class="payer">
-            <p>£1000</p>
-            <i class="fa-solid fa-circle-check icons"></i>
-          </div>
-        </div>
-        <input type="text" placeholder="Shots" class="shots_input">
+      </div>
+      <div class="footer">
+        <a href="register.html" class="active"
+          ><i class="fa-solid fa-person icons"></i
+        ></a>
+        <a href="gallery_105.html"><i class="fa-solid fa-flag icons"></i></a>
+        <a href="rate.html"><i class="fa-solid fa-sterling-sign icons"></i></a>
+        <a href="manage_match_stakes.html"
+          ><i class="fa-solid fa-piggy-bank icons"></i
+        ></a>
       </div>
     </div>
-    <div class="footer">
-      <a href="register.html" class="active"><i class="fa-solid fa-person icons"></i></a>
-      <a href="gallery_105.html"><i class="fa-solid fa-flag icons"></i></a>
-      <a href="rate.html"><i class="fa-solid fa-sterling-sign icons"></i></a>
-      <a href="current_settings.html"><i class="fa-solid fa-piggy-bank icons"></i></a>
-    </div>
-  </div>
-  <!-- ============================== -->
-  <script src="assets/js/jquery-3.6.4.min.js"></script>
-  <script src="assets/js/all.min.js"></script>
-  <script src="assets/js/fontawesome.min.js"></script>
-  <script src="assets/js/style.js"></script>
-  <script>
-    const cards = document.querySelectorAll(".list");
+    <!-- ============================== -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+    <script src="assets/js/style.js"></script>
+    <script>
+      const cards = document.querySelectorAll(".list");
 
-    cards.forEach((card) => {
-      card.addEventListener("click", () => {
-        card.classList.toggle("active");
+      cards.forEach((card) => {
+        card.addEventListener("click", () => {
+          card.classList.toggle("active");
+        });
       });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
